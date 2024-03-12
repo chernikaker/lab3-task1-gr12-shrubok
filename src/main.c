@@ -25,7 +25,7 @@
 int main (int argc, char *argv[]){
 
     if(argc != 2) {
-      printf("Error! No argument for the array size");
+      printf("Error! Invalid number of args");
       return 1;
     }
   
