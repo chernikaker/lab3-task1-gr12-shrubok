@@ -1,3 +1,3 @@
 language = "c"
-run = "gcc -o labrabota3-1 /home/runner/lab3-task1-gr12-shrubok/src/main.c"
+run = "gcc -o labrabota3-1 /home/runner/lab3-task1-gr12-shrubok/src/main.c /home/runner/lab3-task1-gr12-shrubok/src/interface.h /home/runner/lab3-task1-gr12-shrubok/src/server.c"
 

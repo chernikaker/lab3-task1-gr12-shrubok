@@ -6,9 +6,9 @@
 #include <stdlib.h>
 #include "interface.h"
 
-int main (int argc, char *argv[])){
+int main (int argc, char *argv[]){
 
-    if(argc != 2)) {
+    if(argc != 2) {
       printf("Error! No argument for the array size");
       return 1;
     }
@@ -18,13 +18,12 @@ int main (int argc, char *argv[])){
     int arraySize = atoi(argv[1]);
     int array[arraySize];
     for (int i = 0; i < arraySize; i++)
-    arr[i] = rand() % 100;
+    array[i] = rand() % 100;
   
     for (int i = 0; i < arraySize; i++){
-      if(isPalindrome(arr[i]))) printf("The number %d is a              palindrome\n", arr[i]");
-      else printf("The number %d is not a palindrome\n", arr[i]");
+      if(isPalindrome(array[i])==1) printf("The number %d is a          palindrome\n", array[i]);
+      else printf("The number %d is not palindrome\n", array[i]);
     }
 
     return 0;
-  
 }

@@ -3,7 +3,7 @@
 
 #include "interface.h"
 
-boolean isPalindrome(int number) {
+int isPalindrome(int number) {
   
     int reversedNumber = 0;
     int originalNumber = number;

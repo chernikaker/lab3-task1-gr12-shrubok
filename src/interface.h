@@ -10,6 +10,6 @@
 //The isPalindrome function determines
 //whether a number is a palindrome
 
-bool isPalindrome(int number);
+int isPalindrome(int number);
 
 #endif
