@@ -12,15 +12,17 @@
 //arguments. If it does not equal to 2 (only array size), the
 //program prints an error message and returns 1. Othewise, it
 //prepares rand function and initializes an array of size equal to
-//the first command line argument. Every array element is a
-//random number from 0 to 99. Then, the main function iterates
-//over the array and calls the isPalindrome function for each
-//element and prints the result.
+//the first command line argument. It fills the array with
+//random numbers from 0 to 99 and prints it. Then, the main
+//function iterates over the array and calls the isPalindrome
+//function for each element and counts the number of palindromes.
 
 //Input: argc - number of command line arguments, argv - array of
 //command line arguments
 
 //Output: 0 - if the program runs successfully, 1 - otherwise
+
+//Result: count - number of palindromes in the array
 
 int main (int argc, char *argv[]){
 
@@ -33,13 +35,18 @@ int main (int argc, char *argv[]){
     
     int arraySize = atoi(argv[1]);
     int array[arraySize];
-    for (int i = 0; i < arraySize; i++)
-    array[i] = rand() % 100;
-  
+    printf("Array: ");
     for (int i = 0; i < arraySize; i++){
-      if(isPalindrome(array[i])==1) printf("The number %d is a          palindrome\n", array[i]);
-      else printf("The number %d is not palindrome\n", array[i]);
+      array[i] = rand() % 100;
+      printf("%d ", array[i]);
     }
+    printf("\n");
 
+    int count=0;
+    for (int i = 0; i < arraySize; i++){
+      if(isPalindrome(array[i])==1) count++;       
+    }
+    printf("The number of palindromes is %d", count);
+    printf("\n");
     return 0;
 }
