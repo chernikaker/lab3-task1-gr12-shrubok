@@ -27,7 +27,7 @@
 int main (int argc, char *argv[]){
 
     if(argc != 2) {
-      printf("Error! Invalid number of args");
+      printf("Error! Invalid number of args\n");
       return 1;
     }
   
